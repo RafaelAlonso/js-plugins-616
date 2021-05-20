@@ -8,17 +8,23 @@
       type="text/css"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
   </head>
   <body>
     <!-- Add some HTML in here -->
 
     <div class="container">
-      <h2>Algolia Places</h2>
+      <select class="select2" name="country">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+      </select>
 
-      <input type="text" id="search" />
-      <h3 id="place"></h3>
+      <textarea class="form-control" id="editor" rows="4"></textarea>
+      <div id="preview"></div>
 
-      <h2>OMDB API</h2>
+      <h2 class="text-center">OMDB API</h2>
 
       <form id="search-form" class="form-inline my-3">
         <input type="text" id="keyword" class="form-control ml-auto" />
